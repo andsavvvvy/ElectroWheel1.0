@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.notification {
+  background-color: #4CAF50;
+  color: white;
+  /* White text */
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+
+.sidebar {
+  
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  padding-top: 56px;
+  overflow-y: auto;
+  background-color: #e8edf2;
+  border-right: 1px solid #091c30;
+}
+
+.sidebar-sticky {
+  position: relative;
+}
+
+.nav-link {
+  padding: 10px 20px;
+  color: #08519a;
+}
+
+.nav-link.active {
+  color: #007bff;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+.custom-select {
+  background-color: yellow;
+  border-color: yellow;
+  color: black;
+}
+
+.custom-select option {
+  background-color: yellow;
+  color: black;
+}
+
+/* Add this CSS to your stylesheets */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
